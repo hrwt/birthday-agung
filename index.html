@@ -1,54 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>27 November</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .envelope {
+      background: #333;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+    .title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .message {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
 <body>
-  <main class="wrap">
-    <header class="card hero">
-      <div class="date">27 November</div>
-      <h1>Selamat ulang tahun 🎂</h1>
-      <p class="lead">
-        Semoga langkahmu ringan, harimu tenang, dan mimpimu dibukakan jalan.
-      </p>
-      <button id="openLetter" class="btn">Buka surat</button>
-    </header>
-
-    <section id="letter" class="card hidden">
-      <h2>Untukmu</h2>
-      <p>
-        Selamat ulang tahun. Aku nggak mau berlebihan—cukup sederhana dan jujur.  
-        Terima kasih sudah jadi sosok yang (entah sadar atau tidak) bikin aku semangat
-        upgrade diri. Semoga sehat, kuat ngejar target, dan dikelilingi orang baik.
-      </p>
-      <p>
-        Di antara ramai hari, I hope you find peace that stays.  
-        Kalau suatu saat baca ini, anggap saja ini doa: semoga yang kau kejar,
-        pelan-pelan juga mendekat.
-      </p>
-      <p class="sign">— H</p>
-    </section>
-
-    <section class="card">
-      <h2>Lagu pilihan</h2>
-      <div class="buttons">
-        <button class="btn" data-song="about">About You</button>
-      <div id="player" class="player">
-        <p>Pilih salah satu lagu di atas ya.</p>
-      </div>
-      <p class="small note">
-        *Kalau videonya nggak muncul, koneksi YouTube-nya lagi lelet. Coba tap lagi.*
-      </p>
-    </section>
-
-    <footer class="small dim">
-      <p>Made with a little courage & a lot of prayers.</p>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
+  <div class="envelope">
+    <div class="title">27 November</div>
+    <h2>Selamat ulang tahun 🎂</h2>
+    <p class="message">
+      aku nggak mau berlebihan, cukup sederhana dan jujur.<br>
+      terima kasih sudah jadi sosok yang bikin aku semangat upgrade diri.<br><br>
+      semoga sehat, langkahmu ringan, mimpimu dibukakan jalan.<br>
+      kalau suatu saat baca ini, anggap aja ini doa:  
+      semoga yang kau kejar, pelan-pelan juga mendekat.  
+      <br><br>— h
+    </p>
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEOCODE" frameborder="0" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
