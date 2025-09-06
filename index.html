@@ -3,38 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selamat Ulang Tahun 🎂</title>
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
+      background: #1e1e1e;
+      color: #f5f5f5;
       font-family: 'Poppins', sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
-      background: url('https://i.ibb.co/4jK6wYH/cloudy-sky.jpg') no-repeat center center/cover;
-    }
-
-    .card {
-      background: rgba(200, 200, 200, 0.9);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      max-width: 500px;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 20px;
     }
-
-    h2 {
+    .envelope {
+      background: #333;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
+    .title {
       font-family: 'Dancing Script', cursive;
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
-
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
+    .message {
+      font-size: 1rem;
+      line-height: 1.6;
     }
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope">
+    <div class="title">27 November</div>
+    <h2>Selamat ulang tahun 🎂</h2>
+    <p class="message">
+      Aku nggak mau berlebihan, cukup sederhana dan jujur.<br>
+      Terima kasih sudah jadi sosok yang bikin aku semangat upgrade diri.<br><br>
+      Sehat selalu, langkahmu ringan, mimpimu dibukakan jalan.<br>
+      kalau suatu saat baca ini, anggap aja ini doa:  
+      "Semoga yang kau kejar, pelan-pelan juga mendekat."  
+      <br><br>— h
+    </p>
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEOCODE" frameborder="0" allowfullscreen></iframe>
+  
+  <!-- audio autoplay -->
+  <audio autoplay loop hidden>
+    <source src="about-you.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>    }
 
     p {
       font-size: 1rem;
